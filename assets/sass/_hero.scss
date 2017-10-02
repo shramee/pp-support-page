@@ -92,27 +92,28 @@
 		width: 250px;
 		position: absolute;
 		bottom: 0;
-		right: 101%;
+		right: 97%;
 		&.pootle {
 			right: auto;
-			left: 101%;
+			left: 97%;
 			width: 160px;
 		}
 	}
 }
 
 #hero ~ .col-full {
-	padding: 50vh 2em 2em;
+	padding: 47vh 2em 2em;
 	position: relative;
 	max-width: 880px;
+	margin: auto;
 }
 
 .content {
 	background: rgba(255, 255, 255, 0);
 	padding: 25px;
 	h1.pp-supp {
-		margin: 0 0 20vh;
-		height: 16vh;
+		margin: 0;
+		height: 40vh;
 		text-align: center;
 		color: #ee4933;
 		font-size: 70px;
@@ -121,6 +122,17 @@
 			margin: 0 0 7vh;
 			font-size: 20px;
 			color: #ee4933;
+		}
+		.scroll-down {
+			height: 56px;
+			width: 56px;
+			margin: 7vh 0;
+			cursor: pointer;
+			background: #ee4933;
+			color: #fff;
+			border-radius: 99px;
+			padding: 14px 11px 11px;
+			font-size: 32px;
 		}
 	}
 }

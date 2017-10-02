@@ -1,0 +1,20 @@
+@media (max-width: 700px) {
+	#hero .characters, #cloud1, #cloud2 {
+		display: none;
+	}
+	.content h1.pp-supp {
+		font-size: 50px;
+		+ p {
+			font-size: 16px;
+		}
+	}
+	#hero {
+		display: none;
+		~ .col-full {
+			padding: 0;
+			.content {
+				background: #fff !important;
+			}
+		}
+	}
+}

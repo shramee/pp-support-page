@@ -44,7 +44,8 @@ PP_Support_Page_Template::get_instance()->in_tpl();
 
 		<h1 class="pp-supp">
 			<span class="logo">Pootle<span style="font-family: 'Lobster', cursive">Press</span></span><br>
-			support
+			support<br>
+			<i class="fa fa-chevron-down scroll-down"></i>
 		</h1>
 
 		<?php while ( have_posts() ) : the_post();

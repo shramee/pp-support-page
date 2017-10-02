@@ -31,6 +31,9 @@ jQuery( function( $ ) {
 		} );
 	} );
 
-	$hero
-		.attr( 'style', style );
+	$body.find( '.scroll-down' ).click( function () {
+		$("html, body").animate( {
+			scrollTop: window.outerHeight - 50,
+		}, 700 );
+	} );
 } );
