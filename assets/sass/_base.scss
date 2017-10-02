@@ -1,0 +1,13 @@
+.secondary-navigation, #masthead, .header-widget-region, .woocommerce-breadcrumb, .entry-header, #sidebar, #colophon {
+	display: none;
+}
+
+#content > .col-full {
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav.secondary-navigation {
+	margin: 0 !important;
+}

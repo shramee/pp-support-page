@@ -1,0 +1,11 @@
+@keyframes l2r2l {
+	0% {
+		transform: translateX(7%);
+	}
+	50% {
+		transform: translateX(-7%);
+	}
+	100% {
+		transform: translateX(7%);
+	}
+}

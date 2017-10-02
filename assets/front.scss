@@ -1,0 +1,15 @@
+@import 'sass/base';
+
+@import 'sass/hero';
+
+.time-dark {
+	@import 'sass/dark';
+}
+.time-bright {
+	@import 'sass/bright';
+	&.time-day {
+		@import 'sass/bright-day';
+	}
+}
+
+@import 'sass/animations';
