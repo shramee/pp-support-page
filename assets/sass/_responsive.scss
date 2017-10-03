@@ -1,7 +1,4 @@
-@media (max-width: 700px) {
-	#hero .characters, #cloud1, #cloud2 {
-		display: none;
-	}
+@media (max-width: 760px) {
 	.content h1.pp-supp {
 		font-size: 50px;
 		+ p {
@@ -9,7 +6,17 @@
 		}
 	}
 	#hero {
-		display: none;
+		#cloud1, #cloud2 {
+			display: none;
+		}
+		.character.wilson {
+			width: 160px;
+			right: 25px !important;
+		}
+		.character.pootle {
+			left: 70px !important;
+			width: 106px;
+		}
 		~ .col-full {
 			padding: 0;
 			.content {

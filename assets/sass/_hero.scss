@@ -6,21 +6,10 @@
 	right: 0;
 	bottom: 0;
 	overflow: hidden;
-
+	background: #52a2f7;
 	* {
 		position: relative;
 		z-index: 1;
-	}
-
-	&:before {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		content: '';
-		background: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%,rgba(0,0,0,.25) 100%);
-		z-index: 0;
 	}
 
 	.sky {
@@ -33,7 +22,7 @@
 			font-size: 160px;
 			left: 25vw;
 			bottom: 79vh;
-			color: #ffff99;
+			color: transparent;
 		}
 	}
 
@@ -41,6 +30,7 @@
 		opacity: 0.79;
 		position: relative;
 		height: 200px;
+		max-height: 32vh;
 		.fa-cloud {
 			font-size: 160px;
 			opacity: 0.95;
@@ -92,47 +82,42 @@
 		width: 250px;
 		position: absolute;
 		bottom: 0;
-		right: 97%;
+		right: 23%;
 		&.pootle {
 			right: auto;
-			left: 97%;
+			left: 29%;
 			width: 160px;
 		}
 	}
-}
-
-#hero ~ .col-full {
-	padding: 47vh 2em 2em;
-	position: relative;
-	max-width: 880px;
-	margin: auto;
-}
-
-.content {
-	background: rgba(255, 255, 255, 0);
-	padding: 25px;
 	h1.pp-supp {
 		margin: 0;
-		height: 40vh;
 		text-align: center;
-		color: #ee4933;
+		color: #fff;
 		font-size: 70px;
-		text-shadow: 1px 1px 1px rgba(0,0,0,0.25), -1px -1px 1px rgba(255,255,255,0.25);
-		& + p {
-			margin: 0 0 7vh;
-			font-size: 20px;
-			color: #ee4933;
-		}
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.25), -1px -1px 2px rgba(0,0,0,0.5);
 		.scroll-down {
 			height: 56px;
 			width: 56px;
 			margin: 7vh 0;
 			cursor: pointer;
-			background: #ee4933;
+			border: 1px solid;
 			color: #fff;
 			border-radius: 99px;
 			padding: 14px 11px 11px;
 			font-size: 32px;
 		}
 	}
+}
+
+#hero ~ .col-full {
+	padding: 2em;
+	position: relative;
+	max-width: 880px;
+	margin: 124vh auto 0;
+	box-sizing: border-box;
+}
+
+.content {
+	background: rgba(255, 255, 255, 0);
+	padding: 25px;
 }

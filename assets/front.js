@@ -25,7 +25,7 @@ jQuery( function( $ ) {
 	$nightSky.find( '.fa-star' ).each( function () {
 		var $t = $( this );
 		$t.css( {
-			top: (2 + 9 * Math.random()) + 'vh',
+			top: 25 + 160 * Math.random(),
 			left: (100 * Math.random()) + 'vw',
 			fontSize: (5 + 11 * Math.random()) + 'px'
 		} );
@@ -33,7 +33,7 @@ jQuery( function( $ ) {
 
 	$body.find( '.scroll-down' ).click( function () {
 		$("html, body").animate( {
-			scrollTop: window.outerHeight - 50,
+			scrollTop: $hero.next( '.col-full' ).children('.content').offset().top,
 		}, 700 );
 	} );
 } );

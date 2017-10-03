@@ -5,6 +5,12 @@
 	}
 
 	.sky .fa {
-		color: #F0F0E0;
+		color: #ff9;
+		&.fa-circle {
+			color: #ffc;
+			&:before {
+				content: "\263e"; //HTML entity for crescent shape
+			}
+		}
 	}
 }
