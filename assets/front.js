@@ -1,6 +1,6 @@
 jQuery( function( $ ) {
 	var
-		hr = new Date().getHours(),
+		hr = new Date().getUTCHours(),
 		$body = $( 'body' ),
 		$hero = $( '#hero' ),
 		$nightSky = $( '.sky' );
@@ -10,13 +10,13 @@ jQuery( function( $ ) {
 	}
 
 	$body.addClass( 'time-' + hr );
-	if ( hr < 5 ) {
+	if ( hr < 7 ) { // till 6:59a
 		$body.addClass( 'time-night time-dark' );
-	} else if ( hr < 11 ) {
+	} else if ( hr < 10 ) { // till 9:59a
 		$body.addClass( 'time-morning time-bright' );
-	} else if ( hr < 17 ) {
+	} else if ( hr < 17 ) { // till 4:59p
 		$body.addClass( 'time-day time-bright' );
-	} else if ( hr < 20 ) {
+	} else if ( hr < 20 ) { // Til 7:59p
 		$body.addClass( 'time-evening time-bright' );
 	} else {
 		$body.addClass( 'time-night time-dark' );
