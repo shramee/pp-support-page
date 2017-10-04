@@ -48,7 +48,7 @@ PP_Support_Page_Template::get_instance()->in_tpl();
 
 <div class="col-full">
 	<div class="content" data-bottom-top="background:rgba(255, 255, 255, 0)"
-			 data-center-top="background:rgba(255, 255, 255, .95)">
+			 data-center-top="background:rgba(255, 255, 255, .88)">
 
 		<?php while ( have_posts() ) : the_post();
 

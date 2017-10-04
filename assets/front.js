@@ -9,14 +9,21 @@ jQuery( function( $ ) {
 		hr = location.hash.replace( '#', '')
 	}
 
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+	if ( isMobile ) {
+		$body.addClass( 'mobile-detected' );
+	}
+
+
 	$body.addClass( 'time-' + hr );
 	if ( hr < 7 ) { // till 6:59a
 		$body.addClass( 'time-night time-dark' );
 	} else if ( hr < 10 ) { // till 9:59a
 		$body.addClass( 'time-morning time-bright' );
-	} else if ( hr < 17 ) { // till 4:59p
+	} else if ( hr < 16 ) { // till 3:59p
 		$body.addClass( 'time-day time-bright' );
-	} else if ( hr < 20 ) { // Til 7:59p
+	} else if ( hr < 18 ) { // Til 5:59p
 		$body.addClass( 'time-evening time-bright' );
 	} else {
 		$body.addClass( 'time-night time-dark' );
