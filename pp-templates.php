@@ -27,7 +27,7 @@ class PP_Support_Page_Template {
 
 	/** @var array Templates */
 	protected $templates = array(
-		'page-template.php' => 'Support page',
+		'page-template.php' => 'Pootle animation template',
 	);
 
 	/**

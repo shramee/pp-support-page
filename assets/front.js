@@ -1,6 +1,6 @@
 jQuery( function( $ ) {
 	var
-		hr = new Date().getUTCHours(),
+		hr = ppHour,
 		$body = $( 'body' ),
 		$hero = $( '#hero' ),
 		$nightSky = $( '.sky' );

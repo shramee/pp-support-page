@@ -83,10 +83,16 @@
 		position: absolute;
 		bottom: 0;
 		right: 23%;
+		&[src*='night'] {
+			width: 277px;
+		}
 		&.pootle {
 			right: auto;
 			left: 29%;
 			width: 160px;
+			&[src*='night'] {
+				width: 142px;
+			}
 		}
 	}
 	h1.pp-supp {
