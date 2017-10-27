@@ -14,8 +14,7 @@ jQuery( function( $ ) {
 	if ( isMobile ) {
 		$body.addClass( 'mobile-detected' );
 	}
-
-
+	
 	$body.addClass( 'time-' + hr );
 	if ( hr < 7 ) { // till 6:59a
 		$body.addClass( 'time-night time-dark' );
