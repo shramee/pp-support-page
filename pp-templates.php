@@ -44,9 +44,27 @@ class PP_Support_Page_Template {
 	}
 
 	public function enqueue() {
+		if ( ! class_exists( 'Pootle_Page_Builder' ) ) {
+			wp_enqueue_script( 'skrollr', 'https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js' );
+			add_action( 'wp_footer', array( $this, 'footer' ) );
+		}
 		wp_enqueue_script( 'support-page-js', plugin_dir_url( __FILE__ ) . 'assets/front.min.js', '', '' );
 		wp_enqueue_style( 'support-page-css', plugin_dir_url( __FILE__ ) . 'assets/front.css', '', '' );
 		wp_enqueue_style( 'google-lobster', 'https://fonts.googleapis.com/css?family=Lobster', '', '' );
+	}
+
+	public function footer() {
+		?>
+		<script>
+			ppbSkrollr = false;
+			if ( ! /Android|iPhone|iPad|iPod|BlackBerry/i.test( navigator.userAgent || navigator.vendor || a.opera ) ) {
+				ppbSkrollr = skrollr.init( {
+					forceHeight    : false,
+					smoothScrolling: false,
+				} );
+			}
+		</script>
+		<?php
 	}
 
 	public function in_tpl() {

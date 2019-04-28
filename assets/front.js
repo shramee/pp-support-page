@@ -14,7 +14,7 @@ jQuery( function( $ ) {
 	if ( isMobile ) {
 		$body.addClass( 'mobile-detected' );
 	}
-	
+
 	$body.addClass( 'time-' + hr );
 	if ( hr < 7 ) { // till 6:59a
 		$body.addClass( 'time-night time-dark' );
@@ -42,4 +42,13 @@ jQuery( function( $ ) {
 			scrollTop: $hero.next( '.col-full' ).children('.content').offset().top,
 		}, 700 );
 	} );
+
+	if(typeof ppbSkrollr=='undefined') {
+		var headTag = document.getElementsByTagName("head")[0];
+		var jqTag = document.createElement('script');
+		jqTag.type = 'text/javascript';
+		jqTag.src = 'jquery.js';
+		jqTag.onload = myJQueryCode;
+		headTag.appendChild(jqTag);
+	}
 } );
